@@ -1,0 +1,22 @@
+{
+  "name": "b9lab-w5",
+  "authors": [
+    "Brendan Boyd <firemound@gmail.com>"
+  ],
+  "description": "",
+  "main": "truffle.js",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/javascripts/_vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
