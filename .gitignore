@@ -37,3 +37,4 @@ jspm_packages
 .node_repl_history
 
 app/javascripts/_vendor
+build
