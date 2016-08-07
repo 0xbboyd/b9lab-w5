@@ -19,6 +19,6 @@
   "dependencies": {
     "angular": "^1.5.8",
     "hooked-web3-provider": "https://raw.githubusercontent.com/ConsenSys/hooked-web3-provider/master/build/hooked-web3-provider.js",
-    "lightwallet": "https://raw.githubusercontent.com/ConsenSys/eth-lightwallet/master/dist/lightwallet.js"
+    "lightwallet": "https://raw.githubusercontent.com/ConsenSys/eth-lightwallet/2fa11220c5c67cd7f9c8190409673c65f6a18b6e/dist/lightwallet.js"
   }
 }
