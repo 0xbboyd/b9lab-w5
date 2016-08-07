@@ -19,10 +19,15 @@ module.exports = {
         "images/": "images/"
     },
     networks: {
+      "stage": {
+        network_id: 14658, // b9labs test net
+        host: "192.168.1.16",
+        port: 8545
+      },
       "development": {
-        network_id: 14658 // b9labs test net
+        network_id: "default"
       }
-    }
+    },
     rpc: {
         host: "localhost",
         port: 8545
