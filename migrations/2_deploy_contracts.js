@@ -14,7 +14,7 @@ module.exports = function(deployer, network) {
             return registrar.reserve(
                 "urlhint", {
                     from: web3.eth.accounts[0]
-                }):
+                });
         }).then(function(txn1) {
             console.log('register urlhint tx ', txn1)
             return registrar

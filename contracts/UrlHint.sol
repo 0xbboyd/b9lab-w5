@@ -18,7 +18,7 @@ contract UrlHint {
 	{
     registrar = globalRegistrar;
 		GlobalRegistrar reg = GlobalRegistrar(globalRegistrar);
-		reg.reserve.value(5 ether)("urlhinter");
+		reg.reserve("urlhinter");
 		reg.setAddress("urlhinter", this);
 		reg.setName("urlhinter");
 		reg.setOwner("urlhinter", msg.sender);

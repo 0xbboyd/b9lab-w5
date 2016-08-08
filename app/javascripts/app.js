@@ -1,6 +1,7 @@
 var accounts;
 var account;
 var balance;
+var metaCoinAddress;
 
 function setStatus(message) {
     var status = document.getElementById("status");
@@ -8,7 +9,7 @@ function setStatus(message) {
 };
 
 function refreshBalance() {
-    var meta = MetaCoin.deployed();
+    var meta = MetaCoin.at(metaCoinAddress);
 
     meta.getBalance.call(account, {
         from: account
@@ -22,7 +23,7 @@ function refreshBalance() {
 };
 
 function sendCoin() {
-    var meta = MetaCoin.deployed();
+    var meta = MetaCoin.at(metaCoinAddress);
 
     var amount = parseInt(document.getElementById("amount").value);
     var receiver = document.getElementById("receiver").value;

@@ -13,6 +13,9 @@ module.exports = {
             "javascripts/_vendor/hooked-web3-provider/index.js",
             "javascripts/client-sig.js"
         ],
+        "registrar.js": [
+          "javascripts/registrar.js"
+        ],
         "app.css": [
             "stylesheets/app.css"
         ],
@@ -21,8 +24,8 @@ module.exports = {
     networks: {
       "stage": {
         network_id: 14658, // b9labs test net
-        host: "192.168.1.16",
-        port: 8545
+        // host: "192.168.1.16",
+        // port: 8545
       },
       "development": {
         network_id: "default"

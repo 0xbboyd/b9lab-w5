@@ -1,4 +1,3 @@
-
 window.onload = function() {
     web3.eth.getAccounts(function(err, accs) {
         if (err != null) {
@@ -14,6 +13,15 @@ window.onload = function() {
         accounts = accs;
         account = accounts[0];
 
-        refreshBalance();
+        Registrar.at(registrarAddress)
+            .addr("MetaCoin")
+            .then(function(address) {
+                console.log("MetaCoin is registered at: " + address);
+                metaCoinAddress = address;
+                refreshBalance();
+            })
+            .catch(function(e) {
+                console.error(e);
+            });
     })
 };
